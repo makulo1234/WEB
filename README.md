@@ -12,5 +12,5 @@ contact.php - Kontaktný formulár - server script
 <strong>Podpriečinky:</strong>
 <ul>
   <li><i>obrazky</i> - súbor obrázkov</li>
-  <li><i>PHPMailer</i> - PHP API na posielanie emailov</li>
+  <li><i>PHPMailer.zip</i> - PHP API na posielanie emailov (je potrebné si to unzipovat)</li>
   <li><i>scripts</i> - skripty</li>
