@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Martin Čorovčák">
+  <meta name="description" content="Osobné portfolio - Martin Čorovčák">
+  <title>Martin Čorovčák - Portfolio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('obrazky/landing/landing4.jpg');">
+      <div class="hero-text">
+        <h1>Ahoj, ja som Martin Čorovčák</h1>
+      </div>
+      <nav class="topnav" id="idTopnav">
+          <ul>
+            <li> <a href="index.html" title="Moja biografia">O
+                mne</a> </li>
+            <li> <a href="zaluby.html" title="Hobby">Hobby</a> </li>
+            <li> <a href="moje_uspechy_skola.html" title="Moja škola a úspechy">Škola
+                a úspechy</a> </li>
+            <li class="oznacene"> <a href="kontakt.html" title="Kontaktujte ma">Kontakt</a>
+            </li>
+            <li class="liicon"><a href="javascript:void(0);" onclick="menu()"><i class="fa fa-bars"></i></a></li>
+          </ul>
+      </nav>
+    </div>
+  </header>
+  <div id="obsah">
+    <div id="telo" class="vyska">
+      <main>
+        <section id="obsah_sekcia" class="dva_stlpce spolu_pravy_okraj">
+          <h2>Kontakt na mňa</h2>
+          <p style="font-size: 1.2em;"> Ak máte záujem ma kontaktovať a dohodnúť sa, tak mi môžete
+            napísať/zavolať pomocou týhto metód, alebo jednoducho, ak máte
+            ešte nejaké otázky. </p>
+          <article>
+            <h3>E-mail</h3>
+            <p> martino.coro@gmail.com <br>
+              Cez e-mail odpisujem vätšinou ráno, poobede a neskoršie večer. </p>
+          </article>
+          <article>
+            <h3>Sociálne siete</h3>
+            <h5>Facebook</h5>
+            <p> <a href="https://www.facebook.com/MartinCorovcak1"
+                title="Martin Čorovčák - Facebook">https://www.facebook.com/MartinCorovcak1</a>
+            </p>
+            <h5>About.me</h5>
+            <p> <a href="https://about.me/makulo123" title="Martin Čorovčák - About.me">https://about.me/makulo123</a>
+              <br>
+              Slúži aj ako moje portfolio. </p>
+            <h5>Ask.fm</h5>
+            <p> <a href="http://ask.fm/makulo123" title="Martin Čorovčák - Ask.fm">http://ask.fm/makulo123</a>
+            </p>
+          </article>
+        </section>
+      </main>
+      <aside class="okraj velky_okraj pravy_okraj">
+          <div class="container">
+            <h5>Kontaktný formulár</h5>
+            <form action="contact.php" method="POST" target="_blank">
+              <fieldset>
+                <legend>Osobné informácie:</legend>
+                Krstné meno:<br>
+                <input name="krstnemeno" id="krstne" type="text" placeholder="Vaše krstné meno/prezívka" required>
+                Priezvisko:<br>
+                <input name="priezvisko" id="priezv" type="text" placeholder="Vaše priezvisko (voliteľné)">
+                E-mail:<br>
+                <input name="email" id="mail" type="text" placeholder="Váš e-mail" required>
+              </fieldset>
+              <br>
+              <fieldset>
+                Predmet správy:<br>
+                <input name="predmet" id="predm" type="text" placeholder="Predmet" required>
+                <legend>Správa:</legend>
+                <textarea name="sprava" rows="10" cols="30" placeholder="Tu mi môžete napísať správu."
+                  required></textarea>
+              </fieldset>
+              <input type="submit" class="formbutton">
+            </form>
+          </div>
+      </aside>
+      <div class="ciste"> <br>
+      </div>
+    </div>
+    <footer>
+      <br>
+      Autor: Martin Čorovčák <br>
+      Čas aktualizácie:
+        <div id="lastMod"></div>
+        <br> 
+        Všetky práva vyhradené © Martin Čorovčák 2019 <br>
+    </footer>
+  </div>
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>

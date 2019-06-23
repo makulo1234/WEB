@@ -1,817 +1,106 @@
 <!DOCTYPE html>
-<html lang="sk" dir="ltr">
+<html lang="sk">
 
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
   <meta charset="utf-8">
-  <meta name="description" content="Skúšobná stránka">
-  <meta name="keywords" content="HTML,CSS,JavaScript,PHP">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Martin Čorovčák">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Moja web stranka</title>
+  <meta name="description" content="Osobné portfolio - Martin Čorovčák">
+  <title>Martin Čorovčák - Portfolio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 </head>
 
-<body id="body">
-  <h1>Prvý paragraf</h1> <!-- Nadpis 1 -->
-  <p>Môj prvý paragraf</p> <!-- Paragraf-->
-  <p>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>
-    Aenean lacinia nulla at purus sagittis, ac maximus leo mattis. <br>
-    Integer scelerisque ligula eu risus pellentesque ullamcorper. <br>
-  </p>
-
-  <h2>Druhý paragraf</h2> <!-- Nadpis 2 -->
-  <p>Paragraf s predformatovaným textom</p> <!-- Paragraf s predformatovaným textom-->
-  <pre>
-      Moja mama učiteľka
-      tiež sa sem – tam správa ľudsky.
-      Od soboty do pondelka
-      strihá papier, na tie kúsky
-      píše tajné odkazy,
-      zavše vzorec nejaký.
-
-      Zrazu ale vrzli vrátka,
-      prišla ku nej kamarátka:
-      - Mňa z teba raz porazí!
-      Čo to robíš, vzorná matka?
-      - Neuveríš, chystám skrátka
-      synčekovi ťaháky.
-
-       - Štefan Moravčík: Ťaháky
-    </pre>
-
-  <h3>Tretí paragraf</h3>
-  <p>
-    <!-- Paragraf s rôznymi textovými tagmi -->
-    <b>Syn lovca medveďov</b><br>
-    <strong>Winnetoua volá:</strong><br>
-    <i>- Začala sa škola!</i><br>
-    <em>Chcú ma zajať, utýrať!</em><br>
-    <mark>Bez pomoci Shatterhanda </mark><br>
-    <small>zničí ma tam učka Brenda.</small><br>
-    <del>Koniec mojej slobody!</del>
-    <br><br>
-    <ins>Pytagorova veta:</ins>
-    c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup><br>
-    <ins>Výraz:</ins>
-    c<sub>2</sub> = a<sub>2</sub> + b<sub>2</sub>
-  </p>
-
-  <!-- Číslovanie a odrážky -->
-  <ul>
-    <li>Lorem</li>
-    <li>Ipsum</li>
-    <li>Dolor</li>
-  </ul>
-  <ul style="list-style-type:square">
-    <li>Lorem</li>
-    <li>Ipsum</li>
-    <li>Dolor</li>
-  </ul>
-
-  <ol type="1">
-    <li>Lorem</li>
-    <li>Ipsum</li>
-    <li>Dolor</li>
-  </ol>
-  <ol type="A">
-    <li>Lorem</li>
-    <li>Ipsum</li>
-    <li>Dolor</li>
-  </ol>
-
-  <p>
-    <a href="https://www.google.com/" target="_blank">Google</a>
-    <a href="https://www.youtube.com/" target="_top">Youtube</a>
-  </p>
-
-  <h4>Obrázky</h4>
-  <br>
-  <img src="nature.jpg" alt="Príroda" width="500" height="500">
-  <img src="https://cdn.theatlantic.com/assets/media/img/mt/2017/06/GettyImages_675371680/square.jpg?1522774933" alt="Príroda" width="500" height="500">
-  <br><br>
-
-  <!-- pokračovanie -->
-  <q cite="https://citaty-slavnych.sk/autori/albert-einstein/">Ak to nevieš vysvetliť jednoducho, potom tomu dostatočne nerozumieš.</q> - Albert Einstein
-
-  <p>Svetový fond na ochranu prírody:</p>
-  <blockquote cite="http://www.worldwildlife.org/who/index.html">
-    For 50 years, <abbr title="World Wildife Fund">WWF</abbr> has been protecting the future of nature.
-    The world's leading conservation organization, WWF works in 100 countries and is supported by
-    1.2 million members in the United States and close to 5 million globally.
-    <br><br>
-    <address>
-      Napísal World Wildlife Fund.<br>
-      Navštívte nás na:<br>
-      worldwildlife.org<br>
-      1250 24th Street, N.W.<br>
-      Washington, DC
-    </address>
-  </blockquote>
-
-  <table>
-    <caption>Adresár</caption>
-    <tr>
-      <th>Krstné meno</th>
-      <th>Priezvisko</th>
-      <th>Vek</th>
-      <th colspan="2">Tel. č.</th>
-    </tr>
-    <tr>
-      <td>Anna</td>
-      <td>Baková</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Ivan</td>
-      <td>Hrozný</td>
-      <td>94</td>
-    </tr>
-  </table>
-
-  <br>
-  <iframe src="https://www.w3schools.com/" height="200" width="200"></iframe>
-
+<body>
   <header>
-    <h2>Mestá</h2>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Ahoj, ja som Martin Čorovčák</h1>
+      </div>
+      <nav class="topnav" id="idTopnav">
+        <ul>
+          <li class="oznacene"> <a href="index.html" title="Moja biografia">O
+              mne</a> </li>
+          <li> <a href="zaluby.html" title="Hobby">Hobby</a> </li>
+          <li> <a href="moje_uspechy_skola.html" title="Moja škola a úspechy">Škola
+              a úspechy</a> </li>
+          <li> <a href="kontakt.html" title="Kontaktujte ma">Kontakt</a>
+          </li>
+          <li class="liicon"><a href="javascript:void(0);" onclick="menu()"><i class="fa fa-bars"></i></a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
+  <div id="obsah">
+    <div id="telo" class="vyska">
+      <main>
+        <section>
+          <h2>O mne</h2>
+          <p style="font-size: 1.2em;">Stručné informácie týkajúce sa mojich vlastností a
+            budúcich plánov.</p>
+          <article>
+            <p class="clearfix">
+              <img src="obrazky/index/alej.png" alt="alejova_logo" id="imgvpravo" width="30%" height="30%">
+              Študoval som na základnej škole a momentálne sa vzdelávam na Gymnáziu Alejová 1 v Košiciach v triede
+              zameranej na matematiku a informatiku, kde som sa počas zatiaľ siedmych rokov štúdia zdokonaľoval v
+              komunikačných zručnostiach a schopnostiach prezentovať svoju prácu. Moje budúce zameranie bude na
+              počítačové vedy, čo bude aj mojím hlavným predmetom štúdia na vysokej škole.
+            </p>
+            <p class="clearfix">
+              <img src="obrazky/index/infousa.jpg" alt="infousa_premietanie" id="imgvlavo" width="35%" height="35%">
+              Veľmi rád pracujem s ľuďmi a to v oblastiach doučovania a koučingu, ako aj počas tímovej spolupráce.
+              Plynule hovorím, píšem a čítam po anglicky na pokročilej úrovni. Taktiež ovládam aj španielsky a ruský
+              jazyk na stredne pokročilej úrovni. Moje IT zručnosti sú na profesionálnej úrovni v oblastiach bežného
+              používania a manipulácie s počítačovými prvkami softvéru aj hardvéru až po komplexné riešenia problémov a
+              programovanie vo viacerých jazykoch. Pracujem s kancelárskymi programami MS Office a grafickými programami
+              od Adobe na užívateľskej úrovni, som mierne pokročilí v používaní front-end web jazykov ako HTML, CSS,
+              Javascript, začiatočník v back-end jazykoch ako PHP a tiež v manipulácií databáz MySQL, avšak som otvorený
+              novým možnostiam ďalšieho a hlbšieho vzdelávania sa.
+            </p>
+            <p> Mojím hlavným štýlom výkonnosti je plánovač (<a
+                href="http://99u.com/articles/42643/the-4-types-of-productivity-styles"
+                title="Článok o hlavných štýloch výkonnosti" target="_blank">viď.</a>). Problémy riešim systematicky.
+              Začínam všeobecným pohľadom na vec, ktorý potom ďalej rozvíjam a rozpracovávam do najmenších detailov,
+              ktoré si väčšina ľudí ani nepovšimne. Milujem inovatívne riešenia, ale nepohrdnem ani zaužívanými a
+              overeními spôsobmi. </p>
 
-  <section>
-    <nav>
-      <ul>
-        <li><a href="#">Londýn</a></li>
-        <li><a href="#">Paríž</a></li>
-        <li><a href="#">Tokyo</a></li>
-      </ul>
-    </nav>
+            <strong>Silné stránky:</strong>
+            <ul class="upravene_odrazky">
+              <li> Trpezlivosť </li>
+              <li> Kreatívnosť </li>
+              <li> Výkonnosť </li>
+              <li> Cieľavedomosť </li>
+              <li> Ambicióznosť </li>
+            </ul>
+            <strong>Slabé stránky:</strong>
+            <ul class="upravene_odrazky">
+              <li> Pomalšie tempo ale zato kvalitnejšia práca </li>
+              <li> Najlepšie výsledky dosahujem pri samostatnej práci, ale viem sa prispôsobiť aj práci v tíme </li>
+            </ul>
 
-    <article>
-      <h1>Londýn</h1>
-      <p>Londýn je hlavné a najväčšie mesto Anglicka a Spojeného kráľovstva.</p>
-      <p>Leží na juhovýchode krajiny pri ústí rieky Temža.</p>
-    </article>
-  </section>
-
-  <br>
-  <footer>
-    <p>Päta stránky</p>
-  </footer>
-
-  <!-- pokračovanie -->
-  <code>
-    x = 5;<br>
-    y = 6;<br>
-    z = x + y;
-  </code>
-  <p>
-    <var>E</var> = <var>mc</var><sup>2</sup><br>
-    <kbd>Ctrl + S</kbd><br>
-    <samp>Error!</samp>
-  </p>
-  <p>Zobrazenie pomocou entít:<br>
-    &lt;p&gt;&lt;/p&gt; <br>
-    &#38; &#162; &#163; &#165; &#8364; &#169; &#174;<br>
-    Symboly: &forall; &part; &exist; &empty;
-  </p>
-  <form action="/action_page.php" target="_blank" method="get">
-    <fieldset>
-      <legend>Personal information:</legend>
-      <input type="radio" name="pohlavie" value="muz" checked> Muž<br>
-      <input type="radio" name="pohlavie" value="zena"> Žena<br>
-      <input type="radio" name="pohlavie" value="iné"> Iné<br>
-      Krstné meno:<br>
-      <input type="text" name="krstnemeno" value="Mickey">
-      <br>
-      Priezvisko:<br>
-      <input type="text" name="priezvisko" value="Mouse">
-      <br><br>
-      <input type="submit" value="Submit">
-    </fieldset>
-  </form>
-  <video width="320" height="240" controls>
-    <source src="nature_video.mp4" type="video/mp4">
-    Tvoj prehliadač nepodporuje toto video.
-  </video>
-  <br>
-  <audio controls>
-    <source src="nature_audio.mp3" type="audio/mpeg">
-    Tvoj prehliadač nepodporuje toto audio.
-  </audio>
-  <br>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/G9Gw2bm3W8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    Tvoj prehliadač nepodporuje toto YT video.</iframe>
-  <br><br>
-
-  <!-- pokračovanie -->
-  <nav>
-    Navigácia na stránke:<br>
-    <a href="amerika.html">Amerika</a> |
-    <a href="afrika.html">Afrika</a> |
-    <a href="europa.html">Európa</a> |
-    <a href="azia.html">Ázia</a>
-  </nav><br>
-  <main>
-    Hlavný obsah stránky
-    <section>
-      <article>
-        <header>
-          <h3>What Does WWF Do?</h3>
-          <p>WWF's mission:</p>
-        </header>
-        <p>WWF's mission is to stop the degradation of our planet's natural environment,
-          and build a future in which humans live in harmony with nature.</p>
-        <details open>
-          <summary>Detaily tohto článku:</summary>
-          Svetový fond na ochranu prírody (angl. The World Wide Fund for Nature, skr. WWF)
-          je medzinárodná mimovládna organizácia podporujúca ochranu, výskum a obnovu životného prostredia.
-          Bola založená v roku 1961 a dnes je najväčšou nezávislou ochranárskou organizáciou na svete,
-          s viac ako 5 miliónmi podporovateľov v celom svete. Jej aktivity sú realizované vo viac ako 100 krajinách sveta,
-          v ktorých podporuje viac ako 1300 ochranárskych a environmentálnych projektov.
-        </details>
-        <time>- 30.12.2018 12:20</time>
-      </article>
-    </section>
-  </main>
-  <br>
-  <aside>
-    Bočný stĺpec / niečo mimo hlavného obsahu stránky
-  </aside>
-
-  <!-- pokračovanie s CSS -->
-
-  <h4 class="wrap">Nadpis</h4>
-  <h5 class="wrap">Nadpis</h5>
-  <p class="wrap" style="background-color: DodgerBlue; color: white;">Modrý vycentrovaný paragraf.</p>
-  <br>
-  <p id="prvy">Border paragraf</p>
-  <p id="druhy">Rôzne farby pozadia</p>
-  <p id="treti">Rôzne farby pozadia</p>
-  <p id="stvrty">Rôzne farby pozadia</p>
-  <br>
-  <pre id="bg">
-        Lorem ipsum dolor sit amet,
-        consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud
-        exercitation ullamco laboris nisi
-        ut aliquip ex ea commodo consequat.
-  </pre>
-
-  <!-- ENKI aplikácia 1 -->
-  <ul id="uno">
-    <li>mama</li>
-    <li>otec</li>
-    <li>syn</li>
-    <li>dcera</li>
-  </ul>
-
-  <div class="stlpce">
-    <p class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-
-  <!-- css 2 -->
-  <br>
-  <p id="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p id="p2">
-    <span id="s1">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
-    <span id="s2">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>
-    <span id="s3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
-    <span id="s4">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span></p>
-  <div id="block">DIV Block</div>
-
-  <!-- ENKI aplikácia 2 -->
-  <div style="height: 20px;"></div>
-  <div id="animacia"></div>
-
-  <!-- css 3 -->
-  <p style="font-size: 1.2em;">Používanie ikon pomocou knižnice ikon (Font Awesome):</p>
-  <i class="fas fa-cloud" style="font-size: 2.0em"></i>
-  <i class="fas fa-heart"></i>
-  <i class="fas fa-car"></i>
-  <i class="fas fa-file"></i>
-  <i class="fas fa-bars"></i>
-  <br>
-  <i class="fas fa-spinner fa-spin"></i>
-  <i class="fas fa-circle-notch fa-spin"></i>
-  <i class="fas fa-sync-alt fa-spin"></i>
-  <i class="fas fa-cog fa-spin"></i>
-  <i class="fas fa-cog fa-pulse"></i>
-  <i class="fas fa-spinner fa-pulse"></i>
-  <ul class="fa-ul">
-    <li><span class="fa-li"><i class="fas fa-check-square"></i></span>List Item</li>
-    <li><span class="fa-li"><i class="fas fa-spinner fa-pulse"></i></span>List Item</li>
-    <li><span class="fa-li"><i class="fas fa-square"></i></span>List Item</li>
-  </ul>
-
-  <p style="font-size: 1.2em;">Používanie a štýlovanie linkov</p>
-  <a id="a1" href="" style="margin-bottom: 10px;">Link 1</a>
-  <br>
-  <a id="a2" href="">Link 2</a>
-  <br>
-
-  <p style="font-size: 1.2em;">Štýlovanie zoznamov</p>
-  <ol id="ol">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Coca Cola</li>
-  </ol>
-
-  <ul id="ul">
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Coca Cola</li>
-  </ul>
-
-  <p style="font-size: 1.2em;">Štýlovanie tabuliek</p>
-  <table id="zakaznici">
-    <tr>
-      <th>Firma</th>
-      <th>Kontakt</th>
-      <th>Krajina</th>
-    </tr>
-    <tr>
-      <td>Alfreds Futterkiste</td>
-      <td>Maria Anders</td>
-      <td>Nemecko</td>
-    </tr>
-    <tr>
-      <td>Berglunds snabbköp</td>
-      <td>Christina Berglund</td>
-      <td>Švédsko</td>
-    </tr>
-    <tr>
-      <td>Centro comercial Moctezuma</td>
-      <td>Francisco Chang</td>
-      <td>Mexiko</td>
-    </tr>
-    <tr>
-      <td>Ernst Handel</td>
-      <td>Roland Mendel</td>
-      <td>Rakúsko</td>
-    </tr>
-  </table>
-
-  <br>
-  <p style="font-size: 1.2em;">Width vs max-width</p>
-  <div class="ex1">width: 500px; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-  <br>
-  <div class="ex2">max-width: 500px; Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-    ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-
-  <br style="margin-top: 20px;">
-
-  <!-- CSS 4 -->
-  <p>Pozície</p>
-  <p class="static">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <p class="relative">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <div class="divrel">
-    <p class="absolute">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <div id="stickyblock">
-    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-      Eum no molestiae voluptatibus.</p>
-    <div class="sticky">Sticky text!</div>
-    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-      Eum no molestiae voluptatibus.</p>
-    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-      Eum no molestiae voluptatibus.</p>
-    <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad.
-      Eum no molestiae voluptatibus.</p>
-    <div style="padding-bottom: 200px"></div>
-  </div>
-  <div style="position: relative; border: 3px solid #73AD21; margin-top: 20px;">
-    <h1>Toto je nadpis!</h1>
-    <img id="logoimg" src="logo.png" width="100px" height="100px">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-
-  <p>Float a Clear</p>
-  <p style="border: 3px solid #73AD21; overflow: auto;">
-    <img src="logo.png" alt="Firefox" id="logoimg2">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
-    Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at
-    libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-  </p>
-  <p>
-    <img src="logo.png" alt="Firefox" id="logoimg3">
-    <div class="clear">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas odio, vitae scelerisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.
-      Fusce luctus vestibulum augue ut aliquet. Mauris ante ligula, facilisis sed ornare eu, lobortis in odio. Praesent convallis urna a lacus interdum ut hendrerit risus congue. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at
-      libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.
-    </div>
-  </p>
-
-  <p>Inline-block</p>
-  <ul class="navblock">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#about">About Us</a></li>
-    <li><a href="#clients">Our Clients</a></li>
-    <li><a href="#contact">Contact Us</a></li>
-  </ul>
-
-  <p>Vycentrovanie</p>
-  <div class="center">
-    <p>Vertikálne aj horizontálne vycentrovaný text!</p>
-  </div>
-
-  <p>Kombinovanie selektorov</p>
-  <div class="child" style="border: 3px solid green;">
-    <p>Paragraf</p>
-    <p>Paragraf</p>
-    <span>
-      <p>Paragraf</p>
-    </span>
-  </div>
-  <br>
-  <div style="border: 3px solid green;">
-    <div class="plus" style="border: 1px solid red;">
-      <p>Paragraf</p>
-      <p>Paragraf</p>
-    </div>
-    <p>Paragraf</p>
-  </div>
-  <br>
-  <div style="border: 3px solid green;">
-    <p>Paragraph 1.</p>
-    <div class="sibling" style="border: 1px solid red;">
-      <code>Kód</code>
-      <p>Paragraph 2.</p>
-    </div>
-    <p>Paragraph 3.</p>
-    <code>Kód</code>
-    <p>Paragraph 4.</p>
-  </div>
-
-  <!-- css 5 -->
-  <p>Pseudo-Classy</p>
-  <div class="d1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-  <div class="d2">
-    Hover:
-    <p>Hello world!</p>
-  </div>
-  <br>
-
-  <p>Pseudo-Elementy</p>
-  <p class="first">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <br>
-
-  <p>Opacity (priehladnosť)</p>
-  <div style="display: table; margin: auto;">
-    <img id="obrazok1" src="logo.png" alt="Firefox" height="200px" width="200px">
-    <img id="obrazok2" src="logo.png" alt="Firefox" height="200px" width="200px">
-  </div>
-
-  <p>Navigácia na stránke</p>
-  <ul class="ul1">
-    <li><a class="active" href="#home">Home</a></li>
-    <li><a href="#news">Novinky</a></li>
-    <li><a href="#contact">Kontakt</a></li>
-    <li><a href="#about">O nás</a></li>
-  </ul>
-
-  <p>Dropdown</p>
-  <div style="height: 200px;">
-    <div class="dropdown">
-      <button class="dropbtn">Dropdown</button>
-      <div class="dropdown-content">
-        <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a>
+          </article>
+        </section>
+      </main>
+      <div class="ciste"><br>
       </div>
     </div>
-  </div>
-
-  <p>Galéria fotiek</p>
-  <div style="background-color: white;">
-    <div class="gallery">
-      <a target="_blank" href="img_5terre.jpg">
-        <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
-      </a>
-      <div class="desc">Útesy</div>
-    </div>
-    <div class="gallery">
-      <a target="_blank" href="img_forest.jpg">
-        <img src="img_forest.jpg" alt="Forest" width="600" height="400">
-      </a>
-      <div class="desc">Les</div>
-    </div>
-    <div class="gallery">
-      <a target="_blank" href="img_lights.jpg">
-        <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
-      </a>
-      <div class="desc">Polárna žiara</div>
-    </div>
-    <div class="gallery">
-      <a target="_blank" href="img_mountains.jpg">
-        <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
-      </a>
-      <div class="desc">Hory</div>
-    </div>
-  </div>
-  <div style="clear: both;"></div>
-
-  <p>Atrribute selektory</p>
-  <form id="formular" name="input" action="" method="get">
-    Firstname:<input type="text" name="Name" value="Peter" size="20">
-    Lastname:<input type="text" name="Name" value="Griffin" size="20">
-    <input type="button" value="Tlačidlo">
-  </form>
-
-  <p>Counters (počítadlo)</p>
-  <div class="tut">
-    <h1>CSS Counters:</h1>
-    <h2>HTML Tutorial</h2>
-    <h2>CSS Tutorial</h2>
-    <h2>JavaScript Tutorial</h2>
-  </div>
-
-  <p>Border-radius</p>
-  <div style="display: flex; justify-content: space-between;">
-    <p id="radius1">Zaoblené okraje!!!</p>
-    <p id="radius2">Zaoblené okraje!!!</p>
-    <p id="radius3">Zaoblené okraje!!!</p>
-  </div>
-
-  <p>Border Obrázok</p>
-  <p id="borderimg1">border-image: url(border.png) 30 round;</p>
-  <p id="borderimg2">border-image: url(border.png) 30 stretch;</p>
-  <p id="borderimg3">border-image: url(border.png) 30 stretch;</p>
-
-  <p>Viaceré pozadia</p>
-  <div id="poz1">
-    <h1>Lorem Ipsum Dolor</h1>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-  </div>
-
-  <div id="poz2">
-    <h2>Lorem Ipsum Dolor</h2>
-    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
-  </div>
-
-  <p>Gradient</p>
-  <div class="clearfix">
-    <div id="grad1"></div>
-    <div id="grad2"></div>
-    <div id="grad3"></div>
-    <div id="grad4"></div>
-    <div id="grad5"></div>
-  </div>
-
-  <div style="clear: both;"></div>
-  <p>Tiene</p>
-  <h1 id="sha1">Text-shadow!</h1>
-  <h1 id="sha2">Text-shadow!</h1>
-  <h1 id="sha3">Text-shadow!</h1>
-  <div id="sha4">Box s tieňom...</div>
-
-  <p>Text efekty</p>
-  <div class="testt" style="text-overflow: ellipsis;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-    nisi
-    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-    laborum.</div>
-  <br>
-  <div class="testt" style="text-overflow: clip;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-    ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-    laborum.</div>
-  <br>
-  <p>Nejaký text s CSS writing-mode: <span class="testtt">vertical-rl</span>.</p>
-
-  <p>Transform efekty</p>
-  <div class="clearfix">
-    <div id="trans1">
-      Vpravo: 50px, Dole: 100px
-    </div>
-    <div id="trans2">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-    <div id="trans3">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </div>
-  </div>
-
-  <div style="clear: both; height: 70px;"></div>
-  <p>Transition efekty</p>
-  <div id="trs1"></div>
-  <br>
-  <div id="trs2"></div>
-
-  <!-- CSS 7 -->
-
-  <p>Animácia</p>
-  <div style="height: 350px; position: relative;">
-    <div id="anim"></div>
-  </div>
-
-  <p>Tooltip</p>
-  <div class="tooltip1">Hover
-    <span class="tooltiptext1">Tooltip text</span>
-  </div>
-  <br>
-  <div class="tooltip2">Hover
-    <span class="tooltiptext2">Tooltip text</span>
-  </div>
-
-  <p>Manipulácia s obrázkami</p>
-  <div class="obr">
-    <img src="img_5terre.jpg" alt="Cinque Terre" width="400" height="400">
-    <img class="blur" src="img_5terre.jpg" alt="Cinque Terre" width="400" height="400">
-    <img class="brightness" src="img_5terre.jpg" alt="Cinque Terre" width="400" height="400">
-    <img class="contrast" src="img_5terre.jpg" alt="Cinque Terre" width="400" height="400">
-    <img class="grayscale" src="img_5terre.jpg" alt="Cinque Terre" width="400" height="400">
-    <img class="huerotate" src="img_5terre.jpg" alt="Cinque Terre" width="400" height="400">
-    <img class="invert" src="img_5terre.jpg" alt="Cinque Terre" width="400" height="400">
-    <img class="opacity" src="img_5terre.jpg" alt="Cinque Terre" width="400" height="400">
-    <img class="saturate" src="img_5terre.jpg" alt="Cinque Terre" width="400" height="400">
-    <img class="sepia" src="img_5terre.jpg" alt="Cinque Terre" width="400" height="400">
-    <img class="shadow" src="img_5terre.jpg" alt="Cinque Terre" width="400" height="400">
-  </div>
-
-  <div style="clear: both;"></div>
-  <p>Object-fit</p>
-  <img src="img_forest.jpg" alt="Forest" width="400" height="200">
-  <br>
-  <img id="objfit" src="img_forest.jpg" alt="Forest" width="400" height="200">
-
-  <p>Tlačidlá (button)</p>
-  <div>
-    <button class="tlacidlo" style="vertical-align: middle;"><span>Hover</span></button>
-    <button class="tlacidlo" style="vertical-align: middle; background-color: DodgerBlue;"><span>Hover</span></button>
-    <button class="tlacidlo" style="vertical-align: middle; background-color: orange;"><span>Hover</span></button>
-  </div>
-
-  <p>Pagination (stránkovanie/číslovanie strán)</p>
-  <div class="pagination">
-    <a href="#">&laquo;</a>
-    <a href="#">1</a>
-    <a class="active" href="#">2</a>
-    <a href="#">3</a>
-    <a href="#">4</a>
-    <a href="#">5</a>
-    <a href="#">6</a>
-    <a href="#">&raquo;</a>
-  </div>
-
-  <p>Zobrazenie viacerých stĺpcov ako v novinách</p>
-  <div class="noviny">
-    <h2>Lorem Ipsum Dolor Sit Amet</h2>
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
-    aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-    zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
-  </div>
-
-  <p>Resize a Outline-offset</p>
-  <div class="resize">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </div>
-  <br>
-  <div class="outl1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-  <br>
-  <div class="outl2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-
-  <p style="margin-top: 30px;">Premenné v CSS (var)</p>
-  <div id="vardiv1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</div>
-  <br>
-  <div id="vardiv2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</div>
-  <br>
-  <div id="vardiv3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</div>
-
-  <p style="font-size: 1.5em;">FlexBox + @media query + RWD</p>
-  <div class="flexbox">
-    <div class="header">
-      <h1>Responsive Image Grid</h1>
-    </div>
-    <div class="row">
-      <div class="column">
-        <img src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="blur" src="img_5terre.jpg" alt="Cinque Terre">
-        <img class="brightness" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="contrast" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="grayscale" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="huerotate" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="invert" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="opacity" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="saturate" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="sepia" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="shadow" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-      </div>
-
-      <div class="column">
-        <img class="blur" src="img_5terre.jpg" alt="Cinque Terre">
-        <img class="brightness" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="contrast" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="grayscale" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="huerotate" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="invert" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="opacity" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="saturate" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="sepia" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-      </div>
-
-      <div class="column">
-        <img class="brightness" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="contrast" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="grayscale" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="huerotate" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="invert" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="opacity" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-        <img class="saturate" src="img_5terre.jpg" alt="Cinque Terre" style="width: 100%;">
-      </div>
-    </div>
-  </div>
-
-  <!-- CSS 8 -->
-  <p style="font-size: 1.8em; font-weight: bold;">RWD</p>
-  <p class="example">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <br>
-  <picture>
-    <source srcset="img_lights.jpg" media="(max-width: 400px)">
-    <source srcset="img_5terre.jpg">
-    <img src="img_mountains.jpg" alt="Mountains" style="width:auto; ">
-  </picture>
-  <p style="font-size: 1.2em; font-weight: bold;">Grid</p>
-  <div class="grid-container">
-    <div class="item1">Header</div>
-    <div class="item2">Menu</div>
-    <div class="item3">Main</div>
-    <div class="item4">Right</div>
-    <div class="item5">Footer</div>
-  </div>
-
-  <!-- Javascript sekcia -->
-  <!--
-  <div style="height: 20px;"></div>
-  <input id="test" type="text" value="Hahaha">
-  <button type="button" name="btn" onclick="text()">Testing a Submit</button>
-  <p id="js"></p>
-  <canvas id="canvas" width="1000px" height="150px">Tvoj prehliadač nepodporuje kresliace plátno.</canvas>
-  <br>
-  <p id="zmenastylu">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  <button type="button" name="button1" id="btn1" onclick="button1()">Červený Arial</button>
-  <button type="button" name="button3" onclick="button2()">Modrý Times</button>
-  <button type="button" name="button4" onclick="button3()">Zelená Georgia</button>
-  <button type="button" name="button5" onclick="button4()">Fialový Monospace</button>
-
-
-  <br>
-  <div class="clearfix">
-    <div class="box">
-      <textarea id="node" rows="8" cols="80" placeholder="Napíš nejaký text!" style="margin-top: 20px"></textarea>
-      <button type="button" name="lorem" onclick="lorem()">Lorem ipsum...</button>
+    <footer>
       <br>
-      <label for="vyber">Vyber si nejaký tag alebo napíš jeho skratku do textového poľa nižšie:</label>
+      Autor: Martin Čorovčák <br>
+      Čas aktualizácie:
+      <div id="lastMod"></div>
       <br>
-      <select id="vyber" name="select">
-        <option value=""></option>
-        <option value="p">Paragraf</option>
-        <optgroup label="Nadpis">
-          <option value="h1">Najväčší</option>
-          <option value="h3">Stredný</option>
-          <option value="h6">Najmenší</option>
-        </optgroup>
-        <option value="a">Link</option>
-      </select>
-      <br>
-      <input type="text" id="ine" value="p">
-      <br>
-      <button type="button" name="button6" onclick="vyberTagu()">Submit</button>
-    </div>
-    <div class="box" style="margin-top: 20px">
-      <div id="container"></div>
-    </div>
+      Všetky práva vyhradené © Martin Čorovčák 2019 <br>
+    </footer>
   </div>
-
-  <script src="script.js"></script>
-  <footer style="height: 100px"></footer>
+  <script src="scripts/script.js"></script>
 </body>
--->
 
 </html>
